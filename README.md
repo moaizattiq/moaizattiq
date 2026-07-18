@@ -63,3 +63,7 @@
 </div>
 
 ###
+
+<img data-importer="snake" src="https://raw.githubusercontent.com/moaizattiq/moaizattiq/snake-output/snake.svg" alt="Snake animation" />
+
+###
