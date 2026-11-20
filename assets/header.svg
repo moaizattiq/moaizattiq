@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-label="Moaiz Attiq, CS at UT Dallas">
+  <defs>
+    <linearGradient id="bg-h" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#141a33"/>
+    </linearGradient>
+    <linearGradient id="accent-h" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a45"/><stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <pattern id="grid-h" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <style>
+    .rise { animation: rise .9s ease-out both; }
+    .d1 { animation-delay: .1s; } .d2 { animation-delay: .5s; } .d3 { animation-delay: .9s; } .d4 { animation-delay: 1.3s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .scan { animation: scan 6s linear infinite; }
+    @keyframes scan { from { transform: translateX(-300px); } to { transform: translateX(1100px); } }
+    .pulse { animation: pulse 1.6s ease-in-out infinite; transform-origin: 72px 210px; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+    .cursor { animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <rect width="1000" height="250" rx="18" fill="url(#bg-h)"/>
+  <rect width="1000" height="250" rx="18" fill="url(#grid-h)"/>
+  <rect class="scan" x="0" y="0" width="220" height="250" fill="url(#accent-h)" opacity="0.06"/>
+  <rect x="0" y="246" width="1000" height="4" fill="url(#accent-h)"/>
+
+  <text class="rise d1" x="56" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#8b98b5">~/github/moaizattiq <tspan fill="#ff7a45">$</tspan> whoami<tspan class="cursor" fill="#ff7a45">▍</tspan></text>
+  <text class="rise d2" x="54" y="124" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="64" font-weight="800" fill="#e6edf3" letter-spacing="-1.5">Moaiz Attiq</text>
+  <text class="rise d3" x="56" y="164" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8b98b5">CS @ <tspan fill="#e6edf3" font-weight="600">UT Dallas</tspan>  ·  builds things from scratch, then measures them</text>
+
+  <g class="rise d4">
+    <rect x="56" y="194" width="310" height="32" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#ff7a45" stroke-opacity="0.5"/>
+    <circle class="pulse" cx="72" cy="210" r="5" fill="#3fb950"/>
+    <text x="86" y="215" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#e6edf3">open to Summer 2027 SWE internships</text>
+  </g>
+
+  <g class="rise d3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b98b5" text-anchor="end">
+    <text x="944" y="62"><tspan fill="#7dd3fc">35×</tspan> faster than Postgres FTS</text>
+    <text x="944" y="86"><tspan fill="#7dd3fc">376,748</tspan> calls forecast</text>
+    <text x="944" y="110"><tspan fill="#7dd3fc">HackUTD</tspan> honorable mention</text>
+  </g>
+</svg>

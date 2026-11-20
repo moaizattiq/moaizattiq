@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="230" viewBox="0 0 480 230" role="img" aria-label="Sentinel Live: 117 tests in 24 hours">
+  <defs>
+    <linearGradient id="bg-sentinel-live" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#141a33"/>
+    </linearGradient>
+    <linearGradient id="accent-sentinel-live" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a45"/><stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <pattern id="grid-sentinel-live" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <style>
+    .glow { animation: glow 3s ease-in-out infinite; }
+    @keyframes glow { 0%,100% { stroke-opacity: .25; } 50% { stroke-opacity: .7; } }
+  </style>
+  <rect x="1" y="1" width="478" height="228" rx="16" fill="url(#bg-sentinel-live)"/>
+  <rect x="1" y="1" width="478" height="228" rx="16" fill="url(#grid-sentinel-live)"/>
+  <rect class="glow" x="1" y="1" width="478" height="228" rx="16" fill="none" stroke="url(#accent-sentinel-live)" stroke-width="2"/>
+  <rect x="28" y="0" width="56" height="4" rx="2" fill="url(#accent-sentinel-live)"/>
+  <text x="28" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#ff7a45">Hook 'em Hacks · UT Austin</text>
+  <text x="28" y="76" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="800" fill="#e6edf3">Sentinel Live</text>
+  <text x="28" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#7dd3fc">117 tests in 24 hours</text>
+  <text x="28" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b98b5">Catches patients getting worse after discharge: AI</text>
+  <text x="28" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b98b5">voice check-ins plus wearable vitals, scored live</text>
+  <text x="28" y="162" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b98b5">against qSOFA and NEWS2.</text>
+  <rect x="28" y="186" width="95" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#7dd3fc" stroke-opacity="0.35"/><text x="75.5" y="202" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#7dd3fc">TypeScript</text>
+  <rect x="131" y="186" width="65" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#7dd3fc" stroke-opacity="0.35"/><text x="163.5" y="202" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#7dd3fc">Python</text>
+  <rect x="204" y="186" width="73" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#7dd3fc" stroke-opacity="0.35"/><text x="240.5" y="202" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#7dd3fc">FastAPI</text>
+  <rect x="285" y="186" width="73" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#7dd3fc" stroke-opacity="0.35"/><text x="321.5" y="202" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#7dd3fc">MongoDB</text>
+</svg>

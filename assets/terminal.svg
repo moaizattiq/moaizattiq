@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-label="Terminal: who I am, what I am doing now, wins">
+  <defs>
+    <linearGradient id="bg-t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#141a33"/>
+    </linearGradient>
+    <linearGradient id="accent-t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a45"/><stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <pattern id="grid-t" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <style>
+    .ln { animation: show .25s ease-out both; }
+    @keyframes show { from { opacity: 0; } to { opacity: 1; } }
+    .cursor { animation: blink 1s step-end infinite 4.85s; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <rect width="1000" height="360" rx="14" fill="url(#bg-t)"/>
+  <rect width="1000" height="360" rx="14" fill="url(#grid-t)"/>
+  <rect width="1000" height="38" rx="14" fill="#ffffff" fill-opacity="0.04"/>
+  <circle cx="26" cy="19" r="6" fill="#ff5f57"/><circle cx="46" cy="19" r="6" fill="#febc2e"/><circle cx="66" cy="19" r="6" fill="#28c840"/>
+  <text x="500" y="24" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b98b5">moaiz@utd: ~</text>
+  <text class="ln" style="animation-delay:0.35s" x="36" y="70" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#ff7a45">❯</tspan> <tspan fill="#e6edf3">whoami</tspan></text>
+  <text class="ln" style="animation-delay:0.80s" x="36" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#8b98b5">moaiz attiq · cs @ ut dallas · class of 2029</tspan></text>
+  <text class="ln" style="animation-delay:1.25s" x="36" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#ff7a45">❯</tspan> <tspan fill="#e6edf3">cat now.txt</tspan></text>
+  <text class="ln" style="animation-delay:1.70s" x="36" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#8b98b5">→ leading a 6-person EPICS team forecasting calls for Vets4Warriors</tspan></text>
+  <text class="ln" style="animation-delay:2.15s" x="36" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#8b98b5">→ working through NeetCode 150</tspan></text>
+  <text class="ln" style="animation-delay:2.60s" x="36" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#8b98b5">→ looking for a Summer 2027 software engineering internship</tspan></text>
+  <text class="ln" style="animation-delay:3.05s" x="36" y="226" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#ff7a45">❯</tspan> <tspan fill="#e6edf3">ls ~/wins</tspan></text>
+  <text class="ln" style="animation-delay:3.50s" x="36" y="252" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#3fb950">hackutd-2026-honorable-mention   35x-faster-than-postgres   89-94pct-forecast-accuracy</tspan></text>
+  <text class="ln" style="animation-delay:3.95s" x="36" y="278" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#ff7a45">❯</tspan> <tspan fill="#e6edf3">echo $MOTTO</tspan></text>
+  <text class="ln" style="animation-delay:4.40s" x="36" y="304" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15"><tspan fill="#7dd3fc" font-style="italic">"build it from scratch, then measure it."</tspan></text>
+  <text class="cursor" x="36" y="330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#ff7a45">❯ ▍</text>
+</svg>
