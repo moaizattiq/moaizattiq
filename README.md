@@ -35,4 +35,9 @@
   <img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite,supabase,docker,githubactions,vercel,linux,git,vscode&perline=10" alt="Data and tools" />
 </p>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/moaizattiq/moaizattiq/output/snake-dark.svg" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/moaizattiq/moaizattiq/output/snake.svg" width="100%" />
+</picture>
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff7a45,100:7dd3fc&height=110&section=footer" width="100%" alt="" />
