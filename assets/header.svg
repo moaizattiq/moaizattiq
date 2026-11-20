@@ -39,6 +39,5 @@
   <g class="rise d3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b98b5" text-anchor="end">
     <text x="944" y="62"><tspan fill="#7dd3fc">35×</tspan> faster than Postgres FTS</text>
     <text x="944" y="86"><tspan fill="#7dd3fc">376,748</tspan> calls forecast</text>
-    <text x="944" y="110"><tspan fill="#7dd3fc">HackUTD</tspan> honorable mention</text>
   </g>
 </svg>

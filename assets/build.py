@@ -66,7 +66,6 @@ def header() -> str:
   <g class="rise d3" font-family="{MONO}" font-size="13" fill="{MUTED}" text-anchor="end">
     <text x="944" y="62"><tspan fill="{ACCENT_2}">35×</tspan> faster than Postgres FTS</text>
     <text x="944" y="86"><tspan fill="{ACCENT_2}">376,748</tspan> calls forecast</text>
-    <text x="944" y="110"><tspan fill="{ACCENT_2}">HackUTD</tspan> honorable mention</text>
   </g>
 </svg>
 """
@@ -76,13 +75,8 @@ TERMINAL_LINES = [
     ("cmd", "whoami"),
     ("out", "moaiz attiq · cs @ ut dallas · class of 2029"),
     ("cmd", "cat now.txt"),
-    ("out", "→ leading a 6-person EPICS team forecasting calls for Vets4Warriors"),
-    ("out", "→ working through NeetCode 150"),
-    ("out", "→ looking for a Summer 2027 software engineering internship"),
-    ("cmd", "ls ~/wins"),
-    ("win", "hackutd-2026-honorable-mention   35x-faster-than-postgres   89-94pct-forecast-accuracy"),
-    ("cmd", "echo $MOTTO"),
-    ("motto", "\"build it from scratch, then measure it.\""),
+    ("out", "→ leading a 6-person forecasting team for Vets4Warriors"),
+    ("out", "→ looking for a Summer 2027 SWE internship"),
 ]
 
 
@@ -133,54 +127,54 @@ PROJECTS = [
     {
         "slug": "oneflow",
         "title": "OneFlow",
-        "tag": "HackUTD 2026 · Honorable Mention, PNC track",
+        "tag": "HackUTD 2026",
         "metric": "739 tests",
-        "desc": "24-month cash-flow engine that ranks your next money move by dollar impact, on a real bank sandbox (Capital One Nessie).",
+        "desc": "Projects 24 months of cash flow and ranks your next money move by dollar impact.",
         "stack": ["TypeScript", "Next.js", "PostgreSQL", "Gemini"],
     },
     {
         "slug": "trail-search",
         "title": "Trail Search",
-        "tag": "From scratch · zero search libraries",
+        "tag": "Built from scratch",
         "metric": "35× faster than Postgres",
-        "desc": "Hand-written tokenizer, inverted index and BM25 ranking. 0.21 ms vs 7.5 ms per query, with 2.5× the recall.",
+        "desc": "Hand-written tokenizer, inverted index and BM25. No search libraries.",
         "stack": ["Python", "FastAPI", "PostgreSQL", "React"],
     },
     {
         "slug": "vets4war",
         "title": "Vets4Warriors Forecast",
-        "tag": "UT Dallas EPICS · Project lead, team of 6",
+        "tag": "UT Dallas EPICS · Project lead",
         "metric": "89–94% daily accuracy",
-        "desc": "LightGBM forecast on 376,748 real calls to a 24/7 veteran support line, turned into staffing with queueing math.",
+        "desc": "Forecasts calls to a 24/7 veteran support line and turns them into staffing.",
         "stack": ["Python", "LightGBM", "FastAPI", "Nuxt"],
     },
     {
         "slug": "sentinel-live",
         "title": "Sentinel Live",
-        "tag": "Hook 'em Hacks · UT Austin",
+        "tag": "Hook 'em Hacks",
         "metric": "117 tests in 24 hours",
-        "desc": "Catches patients getting worse after discharge: AI voice check-ins plus wearable vitals, scored live against qSOFA and NEWS2.",
+        "desc": "Flags patients getting worse after discharge from voice check-ins and wearables.",
         "stack": ["TypeScript", "Python", "FastAPI", "MongoDB"],
     },
     {
         "slug": "elephantvoices",
         "title": "ElephantVoices Cleaner",
-        "tag": "HackSMU VII · for ElephantVoices",
+        "tag": "HackSMU VII",
         "metric": "8–50 Hz rumbles",
-        "desc": "Finds elephant calls below human hearing in noisy field recordings: 3-path signal detector plus a U-Net denoiser.",
+        "desc": "Finds elephant calls below human hearing in noisy field recordings.",
         "stack": ["Python", "PyTorch", "DSP"],
     },
     {
         "slug": "wwm-crm",
         "title": "Walk With Me CRM",
-        "tag": "UT Dallas EPICS · humanitarian nonprofit",
+        "tag": "UT Dallas EPICS",
         "metric": "500+ records in daily use",
-        "desc": "Data tool used every day by a nonprofit's staff, with automated imports from 3 outside sources.",
+        "desc": "Data tool a nonprofit's staff use every day.",
         "stack": ["TypeScript", "Vue"],
     },
 ]
 
-CARD_W, CARD_H = 480, 230
+CARD_W, CARD_H = 480, 200
 CHAR_W = 7.9  # approx width of a 13px monospace glyph
 
 
@@ -200,7 +194,7 @@ def chip_row(stack: list[str], y: int) -> str:
 def card(p: dict) -> str:
     cid = p["slug"]
     max_chars = int((CARD_W - 56) / CHAR_W)
-    lines = wrap(p["desc"], max_chars)[:3]
+    lines = wrap(p["desc"], max_chars)[:2]
     desc = "\n  ".join(
         f'<text x="28" y="{122 + i * 20}" font-family="{MONO}" font-size="13" fill="{MUTED}">{escape(t)}</text>'
         for i, t in enumerate(lines)
